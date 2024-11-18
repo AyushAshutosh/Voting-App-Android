@@ -65,6 +65,7 @@ class RegisterActivity : AppCompatActivity() {
             return
         }
 
+
         if (dbHelper.isUserExists(email)) {
             Toast.makeText(applicationContext, "User already exists!", Toast.LENGTH_LONG).show()
             progressBar.visibility = View.GONE

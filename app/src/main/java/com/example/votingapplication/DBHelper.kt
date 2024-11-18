@@ -17,6 +17,7 @@ class DBHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null
         private const val COL_PASSWORD = "password"
     }
 
+
     override fun onCreate(db: SQLiteDatabase?) {
         val createTableQuery = "CREATE TABLE $TABLE_NAME ($COL_EMAIL TEXT PRIMARY KEY, $COL_PASSWORD TEXT)"
         db?.execSQL(createTableQuery)

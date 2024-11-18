@@ -35,6 +35,7 @@ class InfoActivity : AppCompatActivity() {
         logout = findViewById(R.id.logout)
         cardView = findViewById(R.id.reviewTextVoter)
 
+
         val curUser: FirebaseUser? = FirebaseAuth.getInstance().currentUser
 
         logout.setOnClickListener {

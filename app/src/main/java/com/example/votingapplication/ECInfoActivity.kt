@@ -41,7 +41,6 @@ class ECInfoActivity : AppCompatActivity() {
             finish()
         }
 
-
         val voterRef: DatabaseReference=FirebaseDatabase.getInstance()
             .getReference("election-candidates")
             .child(curCandidate?.uid.orEmpty())

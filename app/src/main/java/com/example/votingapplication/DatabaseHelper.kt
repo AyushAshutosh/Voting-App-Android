@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper
 
 class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
 
+
     companion object {
         private const val DATABASE_NAME = "userDatabase.db"
         private const val DATABASE_VERSION = 1
